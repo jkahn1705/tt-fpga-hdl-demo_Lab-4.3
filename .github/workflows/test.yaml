@@ -18,7 +18,7 @@ jobs:
           ls -la  # List all files to confirm src/project.tlv exists
       - name: Compile TL-Verilog
         run: |
-          cd /home/runner/work/test123/test123
+          cd /home/runner/work/tt-fpga-hdl-demo_Lab-4.3/tt-fpga-hdl-demo_Lab-4.3
           echo "y" | sandpiper-saas -i src/project.tlv -o project.v --verbose
         working-directory: /home/runner/work/tt-fpga-hdl-demo_Lab-4.3/tt-fpga-hdl-demo_Lab-4.3
       - name: List Files
